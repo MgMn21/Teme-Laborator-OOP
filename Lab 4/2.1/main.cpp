@@ -17,7 +17,7 @@ class Student {
         string name;
 
     public:
-        Student(int n = 0, string nam = "Johnny Sins");
+        Student(int n = 0, string nam = "John Doe");
         int getNote();
         void setNote(int n);
         void setName(string nam);
