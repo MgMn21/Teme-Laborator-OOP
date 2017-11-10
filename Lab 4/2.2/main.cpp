@@ -135,7 +135,7 @@ int main()
 
     while(1){
 
-        cout<<endl<<"Do you want to add another student?(y/n);"<<endl;
+        cout<<endl<<"Do you want to add another student?(y/n);"<<endl<<">> "<<endl;
         cin>>choice;
         cout<<endl;
         if(choice == 'y'){
