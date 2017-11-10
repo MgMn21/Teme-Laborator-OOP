@@ -95,6 +95,8 @@ void StudentsGroup::readStudents(){
 }
 //end StudentsGroup
 
+//end class functions
+
 int main()
 {
     int nrOfstudents;
