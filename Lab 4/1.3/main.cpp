@@ -1,9 +1,10 @@
 /*
-    1.2 Modificati codul astfel incit in constructorii Student si StudentsGroup sa folositi cuvintul cheie this.
+    1.3 Adaugati o variabila membru name, in clasa Student si modificati aplicatia astfel incit name sa fie initializat cu „Joe Doe”
 **/
 
 #include <iostream>
-#include "ex2.h"
+#include <string>
+#include "ex3.h"
 
 using namespace std;
 
@@ -11,8 +12,9 @@ using namespace std;
 
 //Student:
 
-Student::Student(int n){
+Student::Student(int n, string nam){
     this -> note = n;
+    this -> name = nam;
 }
 
 int Student::getNote(){
@@ -21,6 +23,14 @@ int Student::getNote(){
 
 void Student::setNote(int n){
     note = n;
+}
+
+void Student::setName(string nam){
+    this->name = nam;
+}
+
+string Student::getName(){
+    return this -> name;
 }
 //end Student
 
@@ -33,7 +43,7 @@ StudentsGroup::StudentsGroup(int n){
 
 void StudentsGroup::showStudentsInGroup(){
     for(int i=0; i<studentsNumber; i++){
-        cout<<i<<" - "<<studentsList[i].getNote()<<endl;
+        cout<<i<<" - "<<studentsList[i].getName()<<", "<<studentsList[i].getNote()<<endl;
     }
 }
 //end StudentsGroup
