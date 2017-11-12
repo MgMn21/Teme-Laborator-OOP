@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1510494206 source:c:\users\matty.desktop-7ehuv3s\desktop\suport de curs\oop lab 4\2.5\main.cpp
+	<iostream>
+	<string>
+	<list>
+	<algorithm>
+
