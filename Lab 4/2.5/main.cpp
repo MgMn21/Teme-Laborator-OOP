@@ -38,7 +38,7 @@ class StudentsGroup {
         void readStudents();
         void sortByName();
         void sortByGrade();
-        void highestGraded();
+        Student highestGraded();
 };
 //end class declarations
 
@@ -114,7 +114,7 @@ void StudentsGroup::sortByName(){
 
 }
 
-void StudentsGroup::highestGraded(){
+Student StudentsGroup::highestGraded(){
 
     Student *tempStudent = new Student(-10, "bob");
 
@@ -124,7 +124,7 @@ void StudentsGroup::highestGraded(){
             *tempStudent = *it;
         }
     }
-    cout<<">>> "<<tempStudent->getName()<<", graded "<<tempStudent->getNote()<<endl;
+    return *tempStudent;
 }
 //end StudentsGroup
 
@@ -138,16 +138,21 @@ int main()
     cin>>nrOfstudents;
 
     StudentsGroup *group = new StudentsGroup(nrOfstudents);
+    Student *tempStudent = new Student;
+
     group -> readStudents();
     group -> showStudentsInGroup();
-    cout<<endl<<"Highest graded student is:"<<endl;
-    group->highestGraded();
+    *tempStudent = group->highestGraded();
+
+    cout<<endl<<"Highest graded student is:"<<endl<<">>> "<<tempStudent->getName()<<", graded "<<tempStudent->getNote()<<endl;
+
+/*
     group -> sortByName();
     cout<<endl<<"Ordered by name:"<<endl;
     group -> showStudentsInGroup();
     group -> sortByGrade();
     cout<<endl<<"Ordered by grade:"<<endl;
     group -> showStudentsInGroup();
-
+**/
     return 0;
 }
