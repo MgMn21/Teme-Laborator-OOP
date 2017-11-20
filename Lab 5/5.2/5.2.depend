@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1511186838 source:c:\users\matty.desktop-7ehuv3s\desktop\suport de curs\oop lab 5\5.2\5-2.cpp
+	<iostream>
+	"5-2.h"
+
+1511186904 c:\users\matty.desktop-7ehuv3s\desktop\suport de curs\oop lab 5\5.2\5-2.h
+
+1511186839 source:c:\users\matty.desktop-7ehuv3s\desktop\suport de curs\oop lab 5\5.2\main.cpp
+	<iostream>
+	"5-2.h"
+
