@@ -2,9 +2,8 @@
 #include <cmath>
 using namespace std;
 /*
-    T.6.4. Rescrieți clasa Operații de la T.6.4. care să folosească metode statice, supraîncărcate, cu doi
-    parametrii (două numere double respectiv două NumarComplex) și să calculeze suma, diferența,
-    produsul și împărțirea parametrilor.
+    T.6.5. Proiectați și implementați o clasă asociată numerelor complexe. 
+    Supraăncărcați operatorii aritmetici, ~ pentru modul și ^ pentru ridicare la putere.
 */
 
 class NumarComplex {
